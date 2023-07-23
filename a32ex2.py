@@ -9,13 +9,13 @@ hora = input("Digite a hora atual: ")
 # converte a hora para inteiro
 try:
     hora = int(hora)
+    if hora < 0 or hora > 23:
+        print("Hora inválida.")
+        exit()
 except:
     print("Hora inválida.")
     exit()
 
-if hora < 0 or hora > 23:
-    print("Hora inválida.")
-    exit()
 
 if hora <= 11:
     print("Bom dia!")
