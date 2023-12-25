@@ -16,4 +16,7 @@ set2.add("laranja")
 set2.add("maçã")
 set2.add("laranja")
 
+set2.update(set1) # Adiciona os elementos de set1 em set2
+set2.discard(2) # Remove o elemento 2 de set2
+
 print(set2)
