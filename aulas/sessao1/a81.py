@@ -36,3 +36,10 @@ def orderByName(peoples: List[Person]) -> List[Person]:
 
 print(orderByAge(lista))
 print(orderByName(lista))
+
+def orderByAgeAndName(person: Person) -> tuple:
+    return person["idade"], person["nome"]
+
+lista.sort(key=orderByAgeAndName)
+
+print(lista)
